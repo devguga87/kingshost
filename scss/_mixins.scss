@@ -1,0 +1,16 @@
+@mixin responsive($width) {
+  @media (max-width:$width){
+    @content  
+  }
+}
+
+@mixin card($width, $color){
+    width: $width;
+    height: $width;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: $color;
+    border-radius:.6rem;
+}

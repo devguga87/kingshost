@@ -1,0 +1,409 @@
+/* line 1, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_reset.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 10, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_reset.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 14, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_reset.scss */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* line 19, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_reset.scss */
+button {
+  cursor: pointer;
+}
+
+/* line 23, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_reset.scss */
+h1, h2, h3 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/* line 1, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_grid.scss */
+.container {
+  width: 100%;
+  max-width: 125rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* line 1, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+.menu {
+  background-color: #5F3CA1;
+}
+
+/* line 4, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+.menu .container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  align-items: center;
+}
+
+/* line 12, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+.menu .menu-nav ul {
+  display: flex;
+}
+
+/* line 15, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+.menu .menu-nav ul li + li {
+  margin-left: 5.6rem;
+}
+
+/* line 20, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+.menu .nav-item {
+  display: flex;
+}
+
+/* line 23, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+.menu .nav-item span {
+  margin-left: 1.6rem;
+  color: #FCFCFC;
+  font-weight: 400;
+  line-height: 1.9rem;
+}
+
+@media (max-width: 960px) {
+  /* line 33, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+  .menu .menu-nav ul {
+    display: flex;
+  }
+  /* line 36, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+  .menu .menu-nav ul li + li {
+    margin-left: 3.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 1, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+  .menu {
+    padding-left: 2.4rem;
+  }
+  /* line 45, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+  .menu .container {
+    padding-top: 3.2rem;
+  }
+  /* line 48, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_header.scss */
+  .menu .menu-nav {
+    display: none;
+  }
+}
+
+/* line 1, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+.hero {
+  background-color: #5F3CA1;
+}
+
+/* line 4, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 9, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+.hero .info {
+  padding: 4rem 0 4rem 0;
+  flex: 1 1 450px;
+  max-width: 48.8rem;
+}
+
+/* line 13, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+.hero .info h1 {
+  font-size: 4.8rem;
+  line-height: 5.7rem;
+  color: #ffffff;
+  margin-bottom: 1.6rem;
+}
+
+/* line 19, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+.hero .info p {
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  margin-bottom: 3.2rem;
+}
+
+/* line 26, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+.hero .info .btn-primary {
+  display: inline-block;
+  padding: 1.7rem 5rem;
+  border-radius: .6rem;
+  background-color: #FFBF00;
+  color: #5F3CA1;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+/* line 36, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+.hero .info .resource-link {
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+/* line 40, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+.hero .info .resource-link .card {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #7B5ABA;
+  border-radius: .6rem;
+}
+
+/* line 44, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+.hero .info .resource-link a {
+  margin-left: 1.6rem;
+  color: #ffffff;
+}
+
+/* line 53, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+.hero .hero-img {
+  padding-top: 7.6rem;
+  margin-bottom: -3rem;
+}
+
+@media (max-width: 990px) {
+  /* line 59, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+  .hero .container {
+    flex-direction: column;
+  }
+  /* line 63, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+  .hero .info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+  }
+  /* line 70, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+  .hero .info .resource-link {
+    margin-top: 3rem;
+  }
+  /* line 75, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+  .hero .hero-img {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 81, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+  .hero .container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  /* line 87, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+  .hero .info h1 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  /* line 92, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+  .hero .info p {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    line-height: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 102, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+  .hero .info h1 {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+  /* line 107, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_hero.scss */
+  .hero .info p {
+    font-size: 1.6rem;
+    margin-top: 2.4rem;
+    line-height: 2.4rem;
+  }
+}
+
+/* line 1, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section {
+  padding-top: 14.9rem;
+  padding-bottom: 10rem;
+}
+
+/* line 4, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5.3rem;
+}
+
+/* line 9, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-title h2 {
+  font-size: 3.2rem;
+  max-width: 50rem;
+}
+
+/* line 15, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* line 19, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-cards .info-item.principal {
+  background-color: #C5BEDC;
+}
+
+/* line 21, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-cards .info-item.principal .card {
+  width: 6.4rem;
+  height: 6.4rem;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: .6rem;
+  margin-bottom: 3rem;
+}
+
+/* line 26, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-cards .secondary {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90rem;
+  border-bottom: 3px solid #5f3ca1a9;
+}
+
+/* line 32, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-cards .secondary .info-item + .info-item {
+  margin-left: 30px;
+}
+
+/* line 36, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-cards .info-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 280px;
+  height: 32rem;
+  padding: 4rem;
+  border-radius: 1.2rem;
+}
+
+/* line 44, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-cards .info-item .card {
+  width: 6.4rem;
+  height: 6.4rem;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #C5BEDC;
+  border-radius: .6rem;
+  margin-bottom: 3rem;
+}
+
+/* line 49, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-cards .info-item h3 {
+  color: #5F3CA1;
+  font-weight: 800;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* line 56, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+.info-section .info-cards .info-item p {
+  color: #5E5570;
+  line-height: 2.6rem;
+}
+
+@media (max-width: 1200px) {
+  /* line 64, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards {
+    flex-direction: column;
+  }
+  /* line 67, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards .info-item.principal {
+    max-width: 100%;
+    margin: 0;
+    flex-direction: row;
+    align-items: center;
+  }
+  /* line 73, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards .info-item.principal .card {
+    margin: 0;
+  }
+  /* line 76, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards .info-item.principal .info-item-textos {
+    margin-left: 3rem;
+  }
+  /* line 80, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards .secondary {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 911px) {
+  /* line 1, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section {
+    padding-top: 7.4rem;
+  }
+  /* line 91, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-title {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* line 94, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-title h2 {
+    margin-bottom: 1.8rem;
+  }
+  /* line 98, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards {
+    flex-direction: column;
+  }
+  /* line 101, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards .info-item {
+    flex-direction: row;
+    align-items: center;
+    height: 22rem;
+  }
+  /* line 105, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards .info-item .card {
+    margin: 0;
+  }
+  /* line 108, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards .info-item .info-item-textos {
+    margin-left: 3rem;
+  }
+  /* line 113, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards .secondary {
+    flex-direction: column;
+  }
+  /* line 115, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards .secondary .info-item {
+    max-width: 100%;
+  }
+  /* line 119, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-cards .secondary .info-item + .info-item {
+    margin-left: 0;
+  }
+  /* line 124, ../Documentos/dev/CODEBOOST/3-kinghost/minha-versao/scss/_infosection.scss */
+  .info-section .info-item.principal {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
